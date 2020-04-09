@@ -1,26 +1,20 @@
 {
-	"name": "zsh",
-	"displayName": "zsh",
-	"description": "",
-	"version": "0.0.1",
+	"name": "zsh-completion-script",
+	"displayName": "zsh completion script detect",
+	"description": "zsh completion script detect",
+	"version": "1.0.0",
+	"publisher": "dual",
+	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.43.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
-		"onCommand:zsh.helloWorld"
+		"onLanguage:plaintext"
 	],
 	"main": "./extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "zsh.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
